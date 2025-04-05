@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  grafango:
+    build:
+      context: ..
+      dockerfile: build/docker/Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - monitoring
+    restart: unless-stopped
+
+  prometheus:
+    image: prom/prometheus
+    volumes:
+      - ../deployments/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    networks:
+      - monitoring
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    networks:
+      - monitoring
+    volumes:
+      - ../grafana/dashboards:/var/lib/grafana/dashboards  # Mount dashboards directory
+      - ../grafana/provisioning:/etc/grafana/provisioning  # Mount provisioning directory
+    restart: unless-stopped
+
+networks:
+  monitoring:
+    driver: bridge
