@@ -50,8 +50,9 @@ Before you begin, ensure you have the following tools installed:
 4. **Accessing Applications**
 
 In order to access applications head to the following pages:
+
     - Grafango: http://localhost:8080
     - Prometheus: http://localhost:9090/
     - Grafana: http://localhost:3000
 
-To see the dashboards go to the dashboard section in Grafana application.
+To see the dashboards go to the `Dashboard` section in the Grafana application.
