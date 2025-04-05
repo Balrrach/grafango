@@ -1,0 +1,31 @@
+version: '3'
+services:
+  grafango:
+    build: .
+    ports:
+      - "8080:8080"
+    networks:
+      - monitoring
+
+  prometheus:
+    image: prom/prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    networks:
+      - monitoring
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    networks:
+      - monitoring
+    volumes:
+      - ./grafana/dashboards:/var/lib/grafana/dashboards  # Mount dashboards directory
+      - ./grafana/provisioning:/etc/grafana/provisioning  # Mount provisioning directory
+
+networks:
+  monitoring:
+    driver: bridge
