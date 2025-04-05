@@ -2,7 +2,7 @@
 
 **Grafango** is a simple Go-based application that collects real-time system metrics like CPU and memory usage using the `gopsutil` library and exposes them as Prometheus metrics. The application also integrates with **Prometheus** for data collection and **Grafana** for dashboard visualization. This project helps you set up a basic monitoring stack with these popular tools.
 
-![Grafango Application](./path/to/your/image.png)
+![Grafango Application](./assets/grafango.png)
 
 ## **Table of Contents**
 
