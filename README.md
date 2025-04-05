@@ -4,12 +4,6 @@
 
 ![Grafango Application](./assets/grafango.png)
 
-## **Table of Contents**
-
-- [**Table of Contents**](#table-of-contents)
-- [**Prerequisites**](#prerequisites)
-- [**Setup \& Installation**](#setup--installation)
-
 ## **Prerequisites**
 
 Before you begin, ensure you have the following tools installed:
