@@ -17,9 +17,6 @@ Before you begin, ensure you have the following tools installed:
 
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
-- [Go 1.18+](https://golang.org/dl/)
-- [Prometheus](https://prometheus.io/)
-- [Grafana](https://grafana.com/)
 
 ## **Setup & Installation**
 
