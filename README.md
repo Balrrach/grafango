@@ -52,4 +52,6 @@ In order to access applications head to the following pages:
 - **Prometheus**: [http://localhost:9090/](http://localhost:9090/)
 - **Grafana**: [http://localhost:3000](http://localhost:3000)
 
+Grafana `user` and `password` are `admin`.
+
 To see the dashboards go to the `Dashboard` section in the Grafana application.
