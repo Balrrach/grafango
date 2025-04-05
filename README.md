@@ -6,10 +6,9 @@
 
 ## **Table of Contents**
 
-- [**Grafango: System Metrics Monitoring with Go, Prometheus \& Grafana**](#grafango-system-metrics-monitoring-with-go-prometheus--grafana)
-  - [**Table of Contents**](#table-of-contents)
-  - [**Prerequisites**](#prerequisites)
-  - [**Setup \& Installation**](#setup--installation)
+- [**Table of Contents**](#table-of-contents)
+- [**Prerequisites**](#prerequisites)
+- [**Setup \& Installation**](#setup--installation)
 
 ## **Prerequisites**
 
